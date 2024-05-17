@@ -1,25 +1,21 @@
 import SwiftUI
 import LocalAuthentication
+import UIKit
 
 struct SettingsView: View {
+    @Environment(\.managedObjectContext) private var viewContext
     @EnvironmentObject var globalData: GlobalData
     @State private var showAlert = false
     @State private var alertMessage = ""
-    
+    @State private var backupURL: URL?
+    @State private var showShareSheet = false
+
     var body: some View {
         VStack {
             Text("Settings")
                 .font(.largeTitle)
                 .fontWeight(.bold)
                 .padding()
-            
-//            // Sleep Time Slider
-//            Slider(value: $globalData.sleepTime, in: 0...24, step: 0.5) {
-//                Text("Sleep Time")
-//            }
-//            .padding()
-//            
-//            Text("Selected Sleep Time: \(globalData.sleepTime, specifier: "%.1f") hours")
             
             // Theme Picker
             Picker("Theme", selection: $globalData.selectedTheme) {
@@ -30,14 +26,18 @@ struct SettingsView: View {
             .pickerStyle(SegmentedPickerStyle())
             .padding()
             
-            // Face ID Toggle
-            Toggle("Enable Face ID", isOn: $globalData.isFaceIDEnabled)
-                .padding()
-                .onChange(of: globalData.isFaceIDEnabled) { newValue in
-                    if newValue {
-                        authenticateUser()
-                    }
-                }
+            // Backup Button
+            Button(action: backupJournalEntries) {
+                Text("Backup Journal Entries")
+                    .font(.title2)
+                    .fontWeight(.bold)
+                    .foregroundColor(.white)
+                    .padding()
+                    .frame(maxWidth: .infinity)
+                    .background(Color.blue)
+                    .cornerRadius(10)
+                    .padding(.horizontal)
+            }
         }
         .padding()
         .onChange(of: globalData.selectedTheme) { _ in
@@ -54,7 +54,12 @@ struct SettingsView: View {
             NotificationCenter.default.removeObserver(self, name: .appDidBecomeActive, object: nil)
         }
         .alert(isPresented: $showAlert) {
-            Alert(title: Text("Authentication Failed"), message: Text(alertMessage), dismissButton: .default(Text("OK")))
+            Alert(title: Text("Backup Complete"), message: Text(alertMessage), dismissButton: .default(Text("OK")))
+        }
+        .sheet(isPresented: $showShareSheet) {
+            if let url = backupURL {
+                ShareSheet(activityItems: [url])
+            }
         }
     }
     
@@ -69,6 +74,17 @@ struct SettingsView: View {
         }
     }
     
+    private func backupJournalEntries() {
+        if let backupURL = BackupService.shared.backupJournalEntries(viewContext: viewContext) {
+            self.backupURL = backupURL
+            self.alertMessage = "Your backup has been created successfully."
+            self.showShareSheet = true
+        } else {
+            self.alertMessage = "Failed to create backup. Please try again."
+        }
+        self.showAlert = true
+    }
+
     private func authenticateUser() {
         let context = LAContext()
         var error: NSError?
@@ -93,6 +109,18 @@ struct SettingsView: View {
             showAlert = true
         }
     }
+}
+
+struct ShareSheet: UIViewControllerRepresentable {
+    var activityItems: [Any]
+    var applicationActivities: [UIActivity]? = nil
+
+    func makeUIViewController(context: Context) -> UIActivityViewController {
+        let controller = UIActivityViewController(activityItems: activityItems, applicationActivities: applicationActivities)
+        return controller
+    }
+
+    func updateUIViewController(_ uiViewController: UIActivityViewController, context: Context) {}
 }
 
 #Preview {

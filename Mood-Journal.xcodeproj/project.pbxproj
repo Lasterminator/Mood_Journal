@@ -18,6 +18,7 @@
 		1EBFE5442BF7ABC800CC7811 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBFE5432BF7ABC800CC7811 /* ImagePicker.swift */; };
 		1EBFE5462BF7ADF100CC7811 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBFE5452BF7ADF100CC7811 /* Quote.swift */; };
 		1EBFE5482BF7ADFD00CC7811 /* QuoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBFE5472BF7ADFD00CC7811 /* QuoteService.swift */; };
+		1EBFE54A2BF7D16D00CC7811 /* BackupService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBFE5492BF7D16D00CC7811 /* BackupService.swift */; };
 		1EC46FB12BF5974A00545A2F /* Mood_JournalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC46FB02BF5974A00545A2F /* Mood_JournalApp.swift */; };
 		1EC46FB32BF5974A00545A2F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC46FB22BF5974A00545A2F /* ContentView.swift */; };
 		1EC46FB52BF5974B00545A2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EC46FB42BF5974B00545A2F /* Assets.xcassets */; };
@@ -58,6 +59,7 @@
 		1EBFE5432BF7ABC800CC7811 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		1EBFE5452BF7ADF100CC7811 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		1EBFE5472BF7ADFD00CC7811 /* QuoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteService.swift; sourceTree = "<group>"; };
+		1EBFE5492BF7D16D00CC7811 /* BackupService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupService.swift; sourceTree = "<group>"; };
 		1EC46FAD2BF5974A00545A2F /* Mood-Journal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mood-Journal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EC46FB02BF5974A00545A2F /* Mood_JournalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mood_JournalApp.swift; sourceTree = "<group>"; };
 		1EC46FB22BF5974A00545A2F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 				1EBFE5432BF7ABC800CC7811 /* ImagePicker.swift */,
 				1EBFE5452BF7ADF100CC7811 /* Quote.swift */,
 				1EBFE5472BF7ADFD00CC7811 /* QuoteService.swift */,
+				1EBFE5492BF7D16D00CC7811 /* BackupService.swift */,
 			);
 			path = "Mood-Journal";
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				1E52F3742BF599B500D1F050 /* JournalView.swift in Sources */,
 				1EC46FBA2BF5974B00545A2F /* Persistence.swift in Sources */,
 				1EC46FB32BF5974A00545A2F /* ContentView.swift in Sources */,
+				1EBFE54A2BF7D16D00CC7811 /* BackupService.swift in Sources */,
 				1E52F37A2BF59A6D00D1F050 /* SettingsView.swift in Sources */,
 				1EC46FBD2BF5974B00545A2F /* Mood_Journal.xcdatamodeld in Sources */,
 				1EBFE5482BF7ADFD00CC7811 /* QuoteService.swift in Sources */,
