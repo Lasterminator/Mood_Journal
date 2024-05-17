@@ -12,11 +12,20 @@ Welcome to the Mood Journal app! This is a SwiftUI-based iOS application designe
 
 ## Screenshots
 
-![Home Screen](screenshots/home.png)
-![Journal Screen](screenshots/journal.png)
-![Stats Screen](screenshots/stats.png)
-![Profile Screen](screenshots/profile.png)
-![Settings Screen](screenshots/settings.png)
+### Home Screen
+<img src="screenshots/home.png" alt="Home Screen" width="300">
+
+### Journal Screen
+<img src="screenshots/journal.png" alt="Journal Screen" width="300">
+
+### Stats Screen
+<img src="screenshots/stats.png" alt="Stats Screen" width="300">
+
+### Profile Screen
+<img src="screenshots/profile.png" alt="Profile Screen" width="300">
+
+### Settings Screen
+<img src="screenshots/settings.png" alt="Settings Screen" width="300">
 
 ## Installation
 
