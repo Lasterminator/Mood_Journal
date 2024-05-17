@@ -1,0 +1,674 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E52F3722BF599A600D1F050 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E52F3712BF599A600D1F050 /* HomeView.swift */; };
+		1E52F3742BF599B500D1F050 /* JournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E52F3732BF599B500D1F050 /* JournalView.swift */; };
+		1E52F3762BF599C800D1F050 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E52F3752BF599C800D1F050 /* ProfileView.swift */; };
+		1E52F3782BF59A6100D1F050 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E52F3772BF59A6100D1F050 /* StatsView.swift */; };
+		1E52F37A2BF59A6D00D1F050 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E52F3792BF59A6D00D1F050 /* SettingsView.swift */; };
+		1E52F37C2BF59B5F00D1F050 /* GlobalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E52F37B2BF59B5F00D1F050 /* GlobalData.swift */; };
+		1E52F37E2BF59E4700D1F050 /* EditEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E52F37D2BF59E4700D1F050 /* EditEntryView.swift */; };
+		1EBFE5422BF7A9E700CC7811 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBFE5412BF7A9E700CC7811 /* AppDelegate.swift */; };
+		1EBFE5442BF7ABC800CC7811 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBFE5432BF7ABC800CC7811 /* ImagePicker.swift */; };
+		1EBFE5462BF7ADF100CC7811 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBFE5452BF7ADF100CC7811 /* Quote.swift */; };
+		1EBFE5482BF7ADFD00CC7811 /* QuoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBFE5472BF7ADFD00CC7811 /* QuoteService.swift */; };
+		1EC46FB12BF5974A00545A2F /* Mood_JournalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC46FB02BF5974A00545A2F /* Mood_JournalApp.swift */; };
+		1EC46FB32BF5974A00545A2F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC46FB22BF5974A00545A2F /* ContentView.swift */; };
+		1EC46FB52BF5974B00545A2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EC46FB42BF5974B00545A2F /* Assets.xcassets */; };
+		1EC46FB82BF5974B00545A2F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EC46FB72BF5974B00545A2F /* Preview Assets.xcassets */; };
+		1EC46FBA2BF5974B00545A2F /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC46FB92BF5974B00545A2F /* Persistence.swift */; };
+		1EC46FBD2BF5974B00545A2F /* Mood_Journal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1EC46FBB2BF5974B00545A2F /* Mood_Journal.xcdatamodeld */; };
+		1EC46FC72BF5974C00545A2F /* Mood_JournalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC46FC62BF5974C00545A2F /* Mood_JournalTests.swift */; };
+		1EC46FD12BF5974C00545A2F /* Mood_JournalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC46FD02BF5974C00545A2F /* Mood_JournalUITests.swift */; };
+		1EC46FD32BF5974C00545A2F /* Mood_JournalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC46FD22BF5974C00545A2F /* Mood_JournalUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1EC46FC32BF5974C00545A2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1EC46FA52BF5974A00545A2F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1EC46FAC2BF5974A00545A2F;
+			remoteInfo = "Mood-Journal";
+		};
+		1EC46FCD2BF5974C00545A2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1EC46FA52BF5974A00545A2F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1EC46FAC2BF5974A00545A2F;
+			remoteInfo = "Mood-Journal";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1E52F3712BF599A600D1F050 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		1E52F3732BF599B500D1F050 /* JournalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalView.swift; sourceTree = "<group>"; };
+		1E52F3752BF599C800D1F050 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		1E52F3772BF59A6100D1F050 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
+		1E52F3792BF59A6D00D1F050 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		1E52F37B2BF59B5F00D1F050 /* GlobalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalData.swift; sourceTree = "<group>"; };
+		1E52F37D2BF59E4700D1F050 /* EditEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEntryView.swift; sourceTree = "<group>"; };
+		1EBFE5412BF7A9E700CC7811 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1EBFE5432BF7ABC800CC7811 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		1EBFE5452BF7ADF100CC7811 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		1EBFE5472BF7ADFD00CC7811 /* QuoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteService.swift; sourceTree = "<group>"; };
+		1EC46FAD2BF5974A00545A2F /* Mood-Journal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mood-Journal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EC46FB02BF5974A00545A2F /* Mood_JournalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mood_JournalApp.swift; sourceTree = "<group>"; };
+		1EC46FB22BF5974A00545A2F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1EC46FB42BF5974B00545A2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1EC46FB72BF5974B00545A2F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1EC46FB92BF5974B00545A2F /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		1EC46FBC2BF5974B00545A2F /* Mood_Journal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Mood_Journal.xcdatamodel; sourceTree = "<group>"; };
+		1EC46FC22BF5974C00545A2F /* Mood-JournalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mood-JournalTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EC46FC62BF5974C00545A2F /* Mood_JournalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mood_JournalTests.swift; sourceTree = "<group>"; };
+		1EC46FCC2BF5974C00545A2F /* Mood-JournalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mood-JournalUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EC46FD02BF5974C00545A2F /* Mood_JournalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mood_JournalUITests.swift; sourceTree = "<group>"; };
+		1EC46FD22BF5974C00545A2F /* Mood_JournalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mood_JournalUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1EC46FAA2BF5974A00545A2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EC46FBF2BF5974C00545A2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EC46FC92BF5974C00545A2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1E52F37F2BF59E5500D1F050 /* Journal */ = {
+			isa = PBXGroup;
+			children = (
+				1E52F3732BF599B500D1F050 /* JournalView.swift */,
+				1E52F37D2BF59E4700D1F050 /* EditEntryView.swift */,
+			);
+			name = Journal;
+			sourceTree = "<group>";
+		};
+		1EC46FA42BF5974A00545A2F = {
+			isa = PBXGroup;
+			children = (
+				1EC46FAF2BF5974A00545A2F /* Mood-Journal */,
+				1EC46FC52BF5974C00545A2F /* Mood-JournalTests */,
+				1EC46FCF2BF5974C00545A2F /* Mood-JournalUITests */,
+				1EC46FAE2BF5974A00545A2F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1EC46FAE2BF5974A00545A2F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1EC46FAD2BF5974A00545A2F /* Mood-Journal.app */,
+				1EC46FC22BF5974C00545A2F /* Mood-JournalTests.xctest */,
+				1EC46FCC2BF5974C00545A2F /* Mood-JournalUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1EC46FAF2BF5974A00545A2F /* Mood-Journal */ = {
+			isa = PBXGroup;
+			children = (
+				1EC46FB02BF5974A00545A2F /* Mood_JournalApp.swift */,
+				1EC46FB22BF5974A00545A2F /* ContentView.swift */,
+				1EC46FB42BF5974B00545A2F /* Assets.xcassets */,
+				1EC46FB92BF5974B00545A2F /* Persistence.swift */,
+				1EC46FBB2BF5974B00545A2F /* Mood_Journal.xcdatamodeld */,
+				1E52F3712BF599A600D1F050 /* HomeView.swift */,
+				1E52F37F2BF59E5500D1F050 /* Journal */,
+				1E52F3752BF599C800D1F050 /* ProfileView.swift */,
+				1E52F3772BF59A6100D1F050 /* StatsView.swift */,
+				1E52F3792BF59A6D00D1F050 /* SettingsView.swift */,
+				1E52F37B2BF59B5F00D1F050 /* GlobalData.swift */,
+				1EC46FB62BF5974B00545A2F /* Preview Content */,
+				1EBFE5412BF7A9E700CC7811 /* AppDelegate.swift */,
+				1EBFE5432BF7ABC800CC7811 /* ImagePicker.swift */,
+				1EBFE5452BF7ADF100CC7811 /* Quote.swift */,
+				1EBFE5472BF7ADFD00CC7811 /* QuoteService.swift */,
+			);
+			path = "Mood-Journal";
+			sourceTree = "<group>";
+		};
+		1EC46FB62BF5974B00545A2F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1EC46FB72BF5974B00545A2F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1EC46FC52BF5974C00545A2F /* Mood-JournalTests */ = {
+			isa = PBXGroup;
+			children = (
+				1EC46FC62BF5974C00545A2F /* Mood_JournalTests.swift */,
+			);
+			path = "Mood-JournalTests";
+			sourceTree = "<group>";
+		};
+		1EC46FCF2BF5974C00545A2F /* Mood-JournalUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1EC46FD02BF5974C00545A2F /* Mood_JournalUITests.swift */,
+				1EC46FD22BF5974C00545A2F /* Mood_JournalUITestsLaunchTests.swift */,
+			);
+			path = "Mood-JournalUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1EC46FAC2BF5974A00545A2F /* Mood-Journal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EC46FD62BF5974C00545A2F /* Build configuration list for PBXNativeTarget "Mood-Journal" */;
+			buildPhases = (
+				1EC46FA92BF5974A00545A2F /* Sources */,
+				1EC46FAA2BF5974A00545A2F /* Frameworks */,
+				1EC46FAB2BF5974A00545A2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mood-Journal";
+			productName = "Mood-Journal";
+			productReference = 1EC46FAD2BF5974A00545A2F /* Mood-Journal.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1EC46FC12BF5974C00545A2F /* Mood-JournalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EC46FD92BF5974C00545A2F /* Build configuration list for PBXNativeTarget "Mood-JournalTests" */;
+			buildPhases = (
+				1EC46FBE2BF5974C00545A2F /* Sources */,
+				1EC46FBF2BF5974C00545A2F /* Frameworks */,
+				1EC46FC02BF5974C00545A2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1EC46FC42BF5974C00545A2F /* PBXTargetDependency */,
+			);
+			name = "Mood-JournalTests";
+			productName = "Mood-JournalTests";
+			productReference = 1EC46FC22BF5974C00545A2F /* Mood-JournalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1EC46FCB2BF5974C00545A2F /* Mood-JournalUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EC46FDC2BF5974C00545A2F /* Build configuration list for PBXNativeTarget "Mood-JournalUITests" */;
+			buildPhases = (
+				1EC46FC82BF5974C00545A2F /* Sources */,
+				1EC46FC92BF5974C00545A2F /* Frameworks */,
+				1EC46FCA2BF5974C00545A2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1EC46FCE2BF5974C00545A2F /* PBXTargetDependency */,
+			);
+			name = "Mood-JournalUITests";
+			productName = "Mood-JournalUITests";
+			productReference = 1EC46FCC2BF5974C00545A2F /* Mood-JournalUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1EC46FA52BF5974A00545A2F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					1EC46FAC2BF5974A00545A2F = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					1EC46FC12BF5974C00545A2F = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 1EC46FAC2BF5974A00545A2F;
+					};
+					1EC46FCB2BF5974C00545A2F = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 1EC46FAC2BF5974A00545A2F;
+					};
+				};
+			};
+			buildConfigurationList = 1EC46FA82BF5974A00545A2F /* Build configuration list for PBXProject "Mood-Journal" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1EC46FA42BF5974A00545A2F;
+			productRefGroup = 1EC46FAE2BF5974A00545A2F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1EC46FAC2BF5974A00545A2F /* Mood-Journal */,
+				1EC46FC12BF5974C00545A2F /* Mood-JournalTests */,
+				1EC46FCB2BF5974C00545A2F /* Mood-JournalUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1EC46FAB2BF5974A00545A2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EC46FB82BF5974B00545A2F /* Preview Assets.xcassets in Resources */,
+				1EC46FB52BF5974B00545A2F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EC46FC02BF5974C00545A2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EC46FCA2BF5974C00545A2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1EC46FA92BF5974A00545A2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EBFE5442BF7ABC800CC7811 /* ImagePicker.swift in Sources */,
+				1EBFE5422BF7A9E700CC7811 /* AppDelegate.swift in Sources */,
+				1E52F3742BF599B500D1F050 /* JournalView.swift in Sources */,
+				1EC46FBA2BF5974B00545A2F /* Persistence.swift in Sources */,
+				1EC46FB32BF5974A00545A2F /* ContentView.swift in Sources */,
+				1E52F37A2BF59A6D00D1F050 /* SettingsView.swift in Sources */,
+				1EC46FBD2BF5974B00545A2F /* Mood_Journal.xcdatamodeld in Sources */,
+				1EBFE5482BF7ADFD00CC7811 /* QuoteService.swift in Sources */,
+				1E52F3782BF59A6100D1F050 /* StatsView.swift in Sources */,
+				1E52F37C2BF59B5F00D1F050 /* GlobalData.swift in Sources */,
+				1E52F3722BF599A600D1F050 /* HomeView.swift in Sources */,
+				1E52F3762BF599C800D1F050 /* ProfileView.swift in Sources */,
+				1EC46FB12BF5974A00545A2F /* Mood_JournalApp.swift in Sources */,
+				1EBFE5462BF7ADF100CC7811 /* Quote.swift in Sources */,
+				1E52F37E2BF59E4700D1F050 /* EditEntryView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EC46FBE2BF5974C00545A2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EC46FC72BF5974C00545A2F /* Mood_JournalTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EC46FC82BF5974C00545A2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EC46FD12BF5974C00545A2F /* Mood_JournalUITests.swift in Sources */,
+				1EC46FD32BF5974C00545A2F /* Mood_JournalUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1EC46FC42BF5974C00545A2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1EC46FAC2BF5974A00545A2F /* Mood-Journal */;
+			targetProxy = 1EC46FC32BF5974C00545A2F /* PBXContainerItemProxy */;
+		};
+		1EC46FCE2BF5974C00545A2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1EC46FAC2BF5974A00545A2F /* Mood-Journal */;
+			targetProxy = 1EC46FCD2BF5974C00545A2F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1EC46FD42BF5974C00545A2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1EC46FD52BF5974C00545A2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1EC46FD72BF5974C00545A2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Mood-Journal/Preview Content\"";
+				DEVELOPMENT_TEAM = LBH46HCY8V;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "trinathpittala.Mood-Journal";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		1EC46FD82BF5974C00545A2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Mood-Journal/Preview Content\"";
+				DEVELOPMENT_TEAM = LBH46HCY8V;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "trinathpittala.Mood-Journal";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		1EC46FDA2BF5974C00545A2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LBH46HCY8V;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "trinathpittala.Mood-JournalTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mood-Journal.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Mood-Journal";
+			};
+			name = Debug;
+		};
+		1EC46FDB2BF5974C00545A2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LBH46HCY8V;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "trinathpittala.Mood-JournalTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mood-Journal.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Mood-Journal";
+			};
+			name = Release;
+		};
+		1EC46FDD2BF5974C00545A2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LBH46HCY8V;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "trinathpittala.Mood-JournalUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Mood-Journal";
+			};
+			name = Debug;
+		};
+		1EC46FDE2BF5974C00545A2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LBH46HCY8V;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "trinathpittala.Mood-JournalUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Mood-Journal";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1EC46FA82BF5974A00545A2F /* Build configuration list for PBXProject "Mood-Journal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EC46FD42BF5974C00545A2F /* Debug */,
+				1EC46FD52BF5974C00545A2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1EC46FD62BF5974C00545A2F /* Build configuration list for PBXNativeTarget "Mood-Journal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EC46FD72BF5974C00545A2F /* Debug */,
+				1EC46FD82BF5974C00545A2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1EC46FD92BF5974C00545A2F /* Build configuration list for PBXNativeTarget "Mood-JournalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EC46FDA2BF5974C00545A2F /* Debug */,
+				1EC46FDB2BF5974C00545A2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1EC46FDC2BF5974C00545A2F /* Build configuration list for PBXNativeTarget "Mood-JournalUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EC46FDD2BF5974C00545A2F /* Debug */,
+				1EC46FDE2BF5974C00545A2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1EC46FBB2BF5974B00545A2F /* Mood_Journal.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1EC46FBC2BF5974B00545A2F /* Mood_Journal.xcdatamodel */,
+			);
+			currentVersion = 1EC46FBC2BF5974B00545A2F /* Mood_Journal.xcdatamodel */;
+			path = Mood_Journal.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1EC46FA52BF5974A00545A2F /* Project object */;
+}
